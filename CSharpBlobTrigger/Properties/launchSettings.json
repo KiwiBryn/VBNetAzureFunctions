@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CSharpBlobTrigger": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Name": "notifications"
+      }
+    }
+  }
+}

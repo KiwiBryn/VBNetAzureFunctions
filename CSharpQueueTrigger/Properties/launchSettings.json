@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CSharpQueueTrigger": {
+      "commandName": "Project",
+      "launchUrl": "http://localhost:7071/api/function1"
+    }
+  }
+}
