@@ -27,7 +27,7 @@ Public Class TimerTrigger
     Public Shared Sub Run(<TimerTrigger("0 */1 * * * *")> myTimer As TimerInfo, log As ILogger)
         Interlocked.Increment(executionCount)
 
-        log.LogInformation("VB.Net TimerTrigger next trigger:{0} Execution count:{1}", myTimer.ScheduleStatus.Next, executionCount)
+        log.LogInformation("VB.Net .NET V6 TimerTrigger next trigger:{0} Execution count:{1}", myTimer.ScheduleStatus.Next, executionCount)
 
     End Sub
 End Class
