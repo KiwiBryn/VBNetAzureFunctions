@@ -1,8 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <AzureFunctionsVersion>v1</AzureFunctionsVersion>
     <RootNamespace>devMobile.Azure.CSharpQueueTrigger</RootNamespace>
+    <UserSecretsId>d0f9dd45-b62c-4d0a-b801-f26b29b7d029</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.38" />
