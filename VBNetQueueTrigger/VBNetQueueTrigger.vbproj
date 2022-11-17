@@ -4,6 +4,7 @@
     <RootNamespace>VBNetQueueTrigger</RootNamespace>
     <TargetFramework>net48</TargetFramework>
 	<AzureFunctionsVersion>v1</AzureFunctionsVersion>
+	<UserSecretsId>528884c9-1fa3-40a3-89d1-4fe4b81b9ad5</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,4 +21,8 @@
     </None>
   </ItemGroup>
 
+	<ItemGroup>
+		<Folder Include="My Project\" />
+	</ItemGroup>	
+	
 </Project>
