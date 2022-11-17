@@ -25,7 +25,7 @@ Public Class QueueTrigger
     Shared ExecutionCount As Long
 
     <FunctionName("Alerts")>
-    Public Shared Sub ProcessQueueMessage(<QueueTrigger("vbnetazurefunctions", Connection:="queueendpoint")> message As String, log As ILogger)
+    Public Shared Sub ProcessQueueMessage(<QueueTrigger("notifications", Connection:="queueendpoint")> message As String, log As ILogger)
         Interlocked.Increment(ConcurrencyCount)
         Interlocked.Increment(ExecutionCount)
 
