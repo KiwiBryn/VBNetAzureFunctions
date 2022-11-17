@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31321.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpQueueTrigger", "CSharpQueueTrigger\CSharpQueueTrigger.csproj", "{479B1D35-BAEF-4EF2-80D3-B2E08BE96D11}"
 EndProject
@@ -15,11 +15,25 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetQueueTrigger", "VBNetQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueMessageGenerator", "QueueMessageGenerator\QueueMessageGenerator.csproj", "{CB17D00F-296C-4B9F-BA0B-4700ED3A6009}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBTimerTrigger", "VBTImerTrigger\VBTimerTrigger.vbproj", "{5784E7B8-DF13-4680-9A07-322EF5DE9C8E}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetBlobTrigger", "VBNetBlobTrigger\VBNetBlobTrigger.vbproj", "{2AFB9A30-7CDB-46CE-821D-9D2C85029038}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNetBlobTrigger", "VBNetBlobTrigger\VBNetBlobTrigger.vbproj", "{2AFB9A30-7CDB-46CE-821D-9D2C85029038}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetHttpTrigger", "VBNetHttpTrigger\VBNetHttpTrigger.vbproj", "{ED97E25A-64D2-477D-B46E-020FF5A9293D}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNetHttpTrigger", "VBNetHttpTrigger\VBNetHttpTrigger.vbproj", "{ED97E25A-64D2-477D-B46E-020FF5A9293D}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetTimerTriggerNet6", "VBNetTImerTriggerNet6\VBNetTimerTriggerNet6.vbproj", "{105FD1B1-97D1-421D-A3ED-2A89CE52774D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTimerTriggerNet6", "CSharpTimerTriggerNet6\CSharpTimerTriggerNet6.csproj", "{C1B16201-C14D-4FA6-848C-AF016693B8E2}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetQueueTriggerNet6", "VBNetQueueTriggerNet6\VBNetQueueTriggerNet6.vbproj", "{706207F1-3F11-40B7-A20A-F7E227DBAFD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpQueueTriggerNet6", "CSharpQueueTriggerNet6\CSharpQueueTriggerNet6.csproj", "{C54C0720-EF3D-45C2-A848-28FBB8F33E61}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetBlobTriggerNet6", "VBNetBlobTriggerNet6\VBNetBlobTriggerNet6.vbproj", "{63E6B5B0-F59B-4F4F-9A20-24A1E5FC4343}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetTimerTrigger", "VBNetTimerTrigger\VBNetTimerTrigger.vbproj", "{5BA79658-33BC-47DF-9D0C-7AE41953455D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpBlobTriggerNet6", "CSharpBlobTriggerNet6\CSharpBlobTriggerNet6.csproj", "{1FBFE352-A202-49F1-90D0-38B4ABA51B49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpHttpTriggerNet6", "CSharpHttpTriggerNet6\CSharpHttpTriggerNet6.csproj", "{9DCE3DA7-ECA5-4A81-B166-9A1BCC789170}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,10 +65,6 @@ Global
 		{CB17D00F-296C-4B9F-BA0B-4700ED3A6009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB17D00F-296C-4B9F-BA0B-4700ED3A6009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB17D00F-296C-4B9F-BA0B-4700ED3A6009}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5784E7B8-DF13-4680-9A07-322EF5DE9C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5784E7B8-DF13-4680-9A07-322EF5DE9C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5784E7B8-DF13-4680-9A07-322EF5DE9C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5784E7B8-DF13-4680-9A07-322EF5DE9C8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2AFB9A30-7CDB-46CE-821D-9D2C85029038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2AFB9A30-7CDB-46CE-821D-9D2C85029038}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AFB9A30-7CDB-46CE-821D-9D2C85029038}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,6 +73,38 @@ Global
 		{ED97E25A-64D2-477D-B46E-020FF5A9293D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED97E25A-64D2-477D-B46E-020FF5A9293D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED97E25A-64D2-477D-B46E-020FF5A9293D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105FD1B1-97D1-421D-A3ED-2A89CE52774D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105FD1B1-97D1-421D-A3ED-2A89CE52774D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105FD1B1-97D1-421D-A3ED-2A89CE52774D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105FD1B1-97D1-421D-A3ED-2A89CE52774D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B16201-C14D-4FA6-848C-AF016693B8E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B16201-C14D-4FA6-848C-AF016693B8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B16201-C14D-4FA6-848C-AF016693B8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B16201-C14D-4FA6-848C-AF016693B8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{706207F1-3F11-40B7-A20A-F7E227DBAFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706207F1-3F11-40B7-A20A-F7E227DBAFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706207F1-3F11-40B7-A20A-F7E227DBAFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706207F1-3F11-40B7-A20A-F7E227DBAFD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54C0720-EF3D-45C2-A848-28FBB8F33E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54C0720-EF3D-45C2-A848-28FBB8F33E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54C0720-EF3D-45C2-A848-28FBB8F33E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54C0720-EF3D-45C2-A848-28FBB8F33E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E6B5B0-F59B-4F4F-9A20-24A1E5FC4343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E6B5B0-F59B-4F4F-9A20-24A1E5FC4343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E6B5B0-F59B-4F4F-9A20-24A1E5FC4343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E6B5B0-F59B-4F4F-9A20-24A1E5FC4343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BA79658-33BC-47DF-9D0C-7AE41953455D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA79658-33BC-47DF-9D0C-7AE41953455D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA79658-33BC-47DF-9D0C-7AE41953455D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA79658-33BC-47DF-9D0C-7AE41953455D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FBFE352-A202-49F1-90D0-38B4ABA51B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FBFE352-A202-49F1-90D0-38B4ABA51B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FBFE352-A202-49F1-90D0-38B4ABA51B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FBFE352-A202-49F1-90D0-38B4ABA51B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DCE3DA7-ECA5-4A81-B166-9A1BCC789170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DCE3DA7-ECA5-4A81-B166-9A1BCC789170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DCE3DA7-ECA5-4A81-B166-9A1BCC789170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCE3DA7-ECA5-4A81-B166-9A1BCC789170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
