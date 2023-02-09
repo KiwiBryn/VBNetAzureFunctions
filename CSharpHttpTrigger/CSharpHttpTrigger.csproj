@@ -3,6 +3,7 @@
     <TargetFramework>net48</TargetFramework>
     <AzureFunctionsVersion>v1</AzureFunctionsVersion>
     <RootNamespace>devMobile.Azure.CSharpHttpTrigger</RootNamespace>
+    <UserSecretsId>b77fa243-b873-42ce-b05d-00c302de5dcd</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.38" />

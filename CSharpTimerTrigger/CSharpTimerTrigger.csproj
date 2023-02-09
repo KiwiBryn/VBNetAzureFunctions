@@ -3,6 +3,7 @@
     <TargetFramework>net48</TargetFramework>
     <AzureFunctionsVersion>v1</AzureFunctionsVersion>
     <RootNamespace>devMobile.Azure.CSharpTimerTrigger</RootNamespace>
+    <UserSecretsId>d4db9c77-d3ed-417e-962e-c2267ec89759</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.38" />
