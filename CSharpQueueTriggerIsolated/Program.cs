@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------------
-// Copyright (c) February 2021, devMobile Software
+// Copyright (c) February 2023, devMobile Software
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,11 +14,11 @@
 // limitations under the License.
 //
 //---------------------------------------------------------------------------------
-using Microsoft.Azure.Functions.Worker;
-using Microsoft.Extensions.Hosting;
-
 namespace devMobile.Azure.CSharpQueueTriggerIsolated
 {
+    using Microsoft.Azure.Functions.Worker;
+    using Microsoft.Extensions.Hosting;
+
     internal class Program
     {
         static void Main(string[] args)
