@@ -27,12 +27,12 @@ namespace devMobile.Azure.CSharpBlobTrigger
 	{
 		private static int ExecutionCount = 0;
 
-		[FunctionName("Notifications")]
-		public static void Run([BlobTrigger("notifications/{name}", Connection = "BlobEndpoint")] Stream myBlob, string name, ILogger log)
+		[FunctionName("CSharpBlobTrigger")]
+		public static void Run([BlobTrigger("csharpblobtrigger/{name}", Connection = "BlobEndpoint")] Stream myBlob, string name, ILogger log)
 		{
 			Interlocked.Increment(ref ExecutionCount);
 
-			log.LogInformation("C# BlobTrigger processed blob Name:{0} Size:{1} bytes Execution count:{2}", name, myBlob.Length, ExecutionCount);
+			log.LogInformation("C# .NET 4.8 BlobTrigger processed blob Name:{0} Size:{1} bytes Execution count:{2}", name, myBlob.Length, ExecutionCount);
 		}
 	}
 }
