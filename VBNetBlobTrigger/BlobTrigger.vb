@@ -22,14 +22,14 @@ Imports Microsoft.Extensions.Logging
 
 
 Public Class BlobTrigger
-   Shared executionCount As Int32
+    Shared executionCount As Int32
 
-   ' This function will get triggered/executed when a new message is written on an Azure Queue called events.
-   <FunctionName("Notifications")>
-   Public Shared Async Sub Run(<BlobTrigger("notifications/{name}", Connection:="BlobEndPoint")> payload As Stream, name As String, log As ILogger)
-      Interlocked.Increment(executionCount)
+    ' This function will get triggered/executed when a new message is written on an Azure Queue called events.
+    <FunctionName("vbnetblobtrigger")>
+    Public Shared Sub Run(<BlobTrigger("vbnetblobtrigger/{name}", Connection:="BlobEndPoint")> payload As Stream, name As String, log As ILogger)
+        Interlocked.Increment(executionCount)
 
-      log.LogInformation("VB.Net BlobTrigger processed blob name:{0} Size:{1} bytes Execution count:{2}", name, payload.Length, executionCount)
-   End Sub
+        log.LogInformation("VB.Net .NET 4.8 BlobTrigger processed blob name:{0} Size:{1} bytes Execution count:{2}", name, payload.Length, executionCount)
+    End Sub
 End Class
 
