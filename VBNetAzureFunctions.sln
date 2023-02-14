@@ -15,8 +15,6 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetQueueTrigger", "VBNetQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueMessageGenerator", "QueueMessageGenerator\QueueMessageGenerator.csproj", "{CB17D00F-296C-4B9F-BA0B-4700ED3A6009}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetBlobTrigger", "VBNetBlobTrigger\VBNetBlobTrigger.vbproj", "{2AFB9A30-7CDB-46CE-821D-9D2C85029038}"
-EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetHttpTrigger", "VBNetHttpTrigger\VBNetHttpTrigger.vbproj", "{ED97E25A-64D2-477D-B46E-020FF5A9293D}"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetTimerTriggerNet6", "VBNetTImerTriggerNet6\VBNetTimerTriggerNet6.vbproj", "{105FD1B1-97D1-421D-A3ED-2A89CE52774D}"
@@ -45,7 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpTimerTriggerIsolated"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetTimerTriggerIsolated", "VBNetTimerTriggerIsolated\VBNetTimerTriggerIsolated.vbproj", "{57D6FC23-10BD-0702-3C8F-9CC698CDF9A9}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNetBlobTriggerIsolated", "VBNetBlobTriggerIsolated\VBNetBlobTriggerIsolated.vbproj", "{335FE381-86CA-015F-13AA-22FFA5BAA6D7}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetBlobTriggerIsolated", "VBNetBlobTriggerIsolated\VBNetBlobTriggerIsolated.vbproj", "{335FE381-86CA-015F-13AA-22FFA5BAA6D7}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetHttpTriggerIsolated", "VBNetHttpTriggerIsolated\VBNetHttpTriggerIsolated.vbproj", "{97F40A12-1F3B-083A-3702-227E6E989D1B}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VBNetBlobTrigger", "VBNetBlobTrigger\VBNetBlobTrigger.vbproj", "{64CB102A-F879-44FE-B0EA-DDAC064131EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,10 +79,6 @@ Global
 		{CB17D00F-296C-4B9F-BA0B-4700ED3A6009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB17D00F-296C-4B9F-BA0B-4700ED3A6009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB17D00F-296C-4B9F-BA0B-4700ED3A6009}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AFB9A30-7CDB-46CE-821D-9D2C85029038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AFB9A30-7CDB-46CE-821D-9D2C85029038}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AFB9A30-7CDB-46CE-821D-9D2C85029038}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AFB9A30-7CDB-46CE-821D-9D2C85029038}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ED97E25A-64D2-477D-B46E-020FF5A9293D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ED97E25A-64D2-477D-B46E-020FF5A9293D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED97E25A-64D2-477D-B46E-020FF5A9293D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -141,6 +139,14 @@ Global
 		{335FE381-86CA-015F-13AA-22FFA5BAA6D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{335FE381-86CA-015F-13AA-22FFA5BAA6D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{335FE381-86CA-015F-13AA-22FFA5BAA6D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F40A12-1F3B-083A-3702-227E6E989D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F40A12-1F3B-083A-3702-227E6E989D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F40A12-1F3B-083A-3702-227E6E989D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F40A12-1F3B-083A-3702-227E6E989D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64CB102A-F879-44FE-B0EA-DDAC064131EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64CB102A-F879-44FE-B0EA-DDAC064131EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64CB102A-F879-44FE-B0EA-DDAC064131EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64CB102A-F879-44FE-B0EA-DDAC064131EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
