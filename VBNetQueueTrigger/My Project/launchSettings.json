@@ -1,10 +1,7 @@
 {
   "profiles": {
     "VBNetQueueTrigger": {
-      "commandName": "Project",
-      "environmentVariables": {
-        "APPINSIGHTS_INSTRUMENTATIONKEY": "173ce283-23b5-48d6-9a66-2d38e49c3791"
-      }
+      "commandName": "Project"
     }
   }
 }
