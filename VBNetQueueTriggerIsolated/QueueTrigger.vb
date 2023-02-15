@@ -30,13 +30,13 @@ Namespace devMobile.Azure.VBNetQueueTriggerIsolated
             _logger = loggerFactory.CreateLogger(Of QueueTrigger)()
         End Sub
 
-        <[Function]("Notifications")>
+        <[Function]("VBNetQueueTriggerIsolated")>
         Public Sub Run(
-        <QueueTrigger("notifications", Connection:="QueueEndpoint")> ByVal message As String)
+        <QueueTrigger("vbnetqueuetriggerisolated", Connection:="QueueEndpoint")> ByVal message As String)
             Interlocked.Increment(_concurrencyCount)
             Interlocked.Increment(_executionCount)
 
-            _logger.LogInformation("VB.Net Concurrency:{_concurrencyCount} ExecutionCount:{_executionCount} Message:{message}", _concurrencyCount, _executionCount, message)
+            _logger.LogInformation("VB.Net .NET 4.8 Isolated Concurrency:{_concurrencyCount} ExecutionCount:{_executionCount} Message:{message}", _concurrencyCount, _executionCount, message)
 
             Interlocked.Decrement(_concurrencyCount)
         End Sub

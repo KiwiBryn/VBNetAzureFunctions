@@ -1,5 +1,5 @@
 ﻿'---------------------------------------------------------------------------------
-' Copyright (c) February 2021, devMobile Software
+' Copyright (c) February 2023, devMobile Software
 '
 ' Licensed under the Apache License, Version 2.0 (the "License");
 ' you may not use this file except in compliance with the License.
@@ -17,8 +17,7 @@
 Imports Microsoft.Azure.Functions.Worker
 Imports Microsoft.Extensions.Hosting
 
-Namespace devMobile.Azure.VBNetQueueTriggerIsolated
-
+Namespace devMobile.Azure.VBNetBlobTriggerIsolated
     Public Class Program
         Public Shared Sub Main(ByVal args As String())
             Call FunctionsDebugger.Enable()
