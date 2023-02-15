@@ -24,12 +24,12 @@ Public Class QueueTrigger
     Shared ConcurrencyCount As Long
     Shared ExecutionCount As Long
 
-    <FunctionName("Alerts")>
-    Public Shared Sub ProcessQueueMessage(<QueueTrigger("notifications", Connection:="queueendpoint")> message As String, log As ILogger)
+    <FunctionName("VBNetQueueTriggerNet6")>
+    Public Shared Sub ProcessQueueMessage(<QueueTrigger("vbnetqueuetriggernet6", Connection:="QueueEndpoint")> message As String, log As ILogger)
         Interlocked.Increment(ConcurrencyCount)
         Interlocked.Increment(ExecutionCount)
 
-        log.LogInformation("VB.Net Concurrency:{0} Message:{1} Execution count:{2}", ConcurrencyCount, message, ExecutionCount)
+        log.LogInformation("VB.Net .NET Core V6 Concurrency:{0} Message:{1} Execution count:{2}", ConcurrencyCount, message, ExecutionCount)
 
         ' Wait for a bit to force some consurrency
         Thread.Sleep(5000)
