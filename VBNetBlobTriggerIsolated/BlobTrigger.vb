@@ -18,17 +18,18 @@ Imports Microsoft.Azure.Functions.Worker
 Imports Microsoft.Extensions.Logging
 
 Namespace devMobile.Azure.VBNetBlobTriggerIsolated
-    Public Class Function1
+    Public Class BlobTrigger
         Private ReadOnly _logger As ILogger
 
         Public Sub New(ByVal loggerFactory As ILoggerFactory)
-            _logger = loggerFactory.CreateLogger(Of Function1)()
+            _logger = loggerFactory.CreateLogger(Of BlobTrigger)()
         End Sub
 
-        <[Function]("Notifications")>
+        <[Function]("vbnetblobtriggerisolated")>
         Public Sub Run(
-        <BlobTrigger("notifications/{name}", Connection:="blobendpoint")> ByVal myBlob As String, ByVal name As String)
-            _logger.LogInformation($"C# Blob trigger function Processed blob Name: {name}  Data: {myBlob}")
+        <BlobTrigger("vbnetblobtriggerisolated/{name}", Connection:="blobendpoint")> ByVal myBlob As String, ByVal name As String)
+
+            _logger.LogInformation($"VB.Net NET 4.8 Isolated Blob trigger function Processed blob Name: {name}  Data: {myBlob}")
         End Sub
     End Class
 End Namespace
