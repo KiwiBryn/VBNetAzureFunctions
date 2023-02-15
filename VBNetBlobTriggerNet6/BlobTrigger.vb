@@ -25,11 +25,11 @@ Public Class BlobTrigger
     Shared executionCount As Int32
 
     ' This function will get triggered/executed when a new message is written on an Azure Queue called events.
-    <FunctionName("Notifications")>
-    Public Shared Async Sub Run(<BlobTrigger("notifications/{name}", Connection:="BlobEndPoint")> payload As Stream, name As String, log As ILogger)
+    <FunctionName("vbnetblobtriggernet6")>
+    Public Shared Sub Run(<BlobTrigger("vbnetblobtriggernet6/{name}", Connection:="BlobEndPoint")> payload As Stream, name As String, log As ILogger)
         Interlocked.Increment(executionCount)
 
-        log.LogInformation("VB.Net BlobTrigger processed blob name:{0} Size:{1} bytes Execution count:{2}", name, payload.Length, executionCount)
+        log.LogInformation("VB.Net .NET Core v6 BlobTrigger processed blob name:{0} Size:{1} bytes Execution count:{2}", name, payload.Length, executionCount)
     End Sub
 End Class
 
