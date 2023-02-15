@@ -1,10 +1,7 @@
 {
   "profiles": {
     "VBNetBlobTrigger": {
-      "commandName": "Project",
-      "environmentVariables": {
-        "name": "notifications"
-      }
+      "commandName": "Project"
     }
   }
 }

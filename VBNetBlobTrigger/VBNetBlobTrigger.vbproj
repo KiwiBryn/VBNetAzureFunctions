@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<OutputType>Library</OutputType>
 		<RootNamespace>devMobile.Azure.VBNetBlobTrigger</RootNamespace>
 		<TargetFramework>net48</TargetFramework>
 		<AzureFunctionsVersion>v1</AzureFunctionsVersion>
@@ -20,9 +19,4 @@
 			<CopyToPublishDirectory>Never</CopyToPublishDirectory>
 		</None>
 	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="My Project\" />
-	</ItemGroup>
-
 </Project>
