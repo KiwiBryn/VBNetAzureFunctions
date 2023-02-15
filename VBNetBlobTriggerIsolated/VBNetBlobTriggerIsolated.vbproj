@@ -4,9 +4,12 @@
     <TargetFramework>net48</TargetFramework>
     <AzureFunctionsVersion>v4</AzureFunctionsVersion>
     <OutputType>Exe</OutputType>
-    <UserSecretsId>83b12bad-95f9-4709-b70f-a5a7e3d1a014</UserSecretsId>
-    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.cs</DefaultItemExcludes>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BlobTrigger.vb" />
+    <Compile Include="Program.vb" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Azure.Storage.Blobs" Version="12.2.0" />
     <PackageReference Include="Azure.Storage.Files.Shares" Version="12.0.1" />
@@ -14,7 +17,6 @@
     <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.8.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Storage" Version="4.0.4" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.7.0" />
-    <PackageReference Include="Microsoft.Configuration.ConfigurationBuilders.UserSecrets" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Azure" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
