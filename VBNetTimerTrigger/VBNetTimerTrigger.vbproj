@@ -19,9 +19,5 @@
 			<CopyToPublishDirectory>Never</CopyToPublishDirectory>
 		</None>
 	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="My Project\" />
-	</ItemGroup>
 	
 </Project>
