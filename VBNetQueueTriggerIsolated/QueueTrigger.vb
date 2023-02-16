@@ -36,7 +36,7 @@ Namespace devMobile.Azure.VBNetQueueTriggerIsolated
             Interlocked.Increment(_concurrencyCount)
             Interlocked.Increment(_executionCount)
 
-            _logger.LogInformation("VB.Net .NET 4.8 Isolated Concurrency:{_concurrencyCount} ExecutionCount:{_executionCount} Message:{message}", _concurrencyCount, _executionCount, message)
+            _logger.LogInformation("VB.Net .NET 4.8 Isolated Queue Trigger Concurrency:{_concurrencyCount} ExecutionCount:{_executionCount} Message:{message}", _concurrencyCount, _executionCount, message)
 
             Interlocked.Decrement(_concurrencyCount)
         End Sub

@@ -29,7 +29,7 @@ Public Class QueueTrigger
         Interlocked.Increment(ConcurrencyCount)
         Interlocked.Increment(ExecutionCount)
 
-        log.LogInformation("VB.Net .NET Core V6 Concurrency:{0} Message:{1} Execution count:{2}", ConcurrencyCount, message, ExecutionCount)
+        log.LogInformation("VB.Net .NET Core V6 Queue Trigger Concurrency:{0} Message:{1} Execution count:{2}", ConcurrencyCount, message, ExecutionCount)
 
         ' Wait for a bit to force some consurrency
         Thread.Sleep(5000)
