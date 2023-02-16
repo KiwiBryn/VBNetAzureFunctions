@@ -23,15 +23,19 @@ Imports Microsoft.Azure.WebJobs.Extensions.Http
 Imports Microsoft.Extensions.Logging
 
 
-Public Class HttpTrigger
-    Shared executionCount As Int32
+Namespace VBNetHttpTriggerIsolated
+    Public Class HttpTrigger
+        Shared executionCount As Int32
 
-    <FunctionName("Notifications")>
-    Public Shared Async Function Run(<HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route:=Nothing)> req As HttpRequestMessage, log As ILogger) As Task(Of HttpResponseMessage)
-        Interlocked.Increment(executionCount)
+        <FunctionName("Notifications")>
+        Public Shared Async Function Run(<HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route:=Nothing)> req As HttpRequestMessage, log As ILogger) As Task(Of HttpResponseMessage)
+            Interlocked.Increment(executionCount)
 
-        log.LogInformation($"VB.Net V6 HTTP trigger Execution count:{0} Method:{1}", executionCount, req.Method)
+            log.LogInformation($"VB.Net V6 HTTP trigger Execution count:{0} Method:{1}", executionCount, req.Method)
 
-        Return New HttpResponseMessage(HttpStatusCode.OK)
-    End Function
-End Class
+            Interlocked.Increment(executionCount)
+
+            Return New HttpResponseMessage(HttpStatusCode.OK)
+        End Function
+    End Class
+End Namespace
